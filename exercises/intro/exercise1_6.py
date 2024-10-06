@@ -13,7 +13,7 @@ def npv(rate, years):
                 npv_value += cash_flow / (1 + rate) ** i
                 break
             except ValueError:
-                print("Invalid input! Please enter a valid number for cash flow for year {i}.")
+                print(f"Invalid input! Please enter a valid number for cash flow for year {i}.")
 
     return round(npv_value, 2), min(cash_flows), max(cash_flows)
 
